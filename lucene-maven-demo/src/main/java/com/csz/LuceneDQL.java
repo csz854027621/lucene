@@ -42,7 +42,7 @@ public class LuceneDQL {
 
     @Test
     public void findAllByRangeQuery() throws IOException {
-        Query query = LongPoint.newRangeQuery("size", 0, 10000);
+        Query query = LongPoint.newRangeQuery("size", 0, -1);
         printAll(query);
 
     }
